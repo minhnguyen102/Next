@@ -1,5 +1,10 @@
+import { FormatDate } from "./_lib/format-date"
+
 export default function Home() {
     return (
-        <h1>Home page</h1>
+        <>
+            {FormatDate("10/2/2004")}
+            <h1>Home page</h1>
+        </>
     )
 }
