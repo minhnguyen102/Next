@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Header() {
     return (
         <header style={{
@@ -17,9 +19,10 @@ export default function Header() {
             <span style={{ fontWeight: 'bold', fontSize: '1.2rem' }}>MyNextApp</span>
           </div>
           <nav style={{ display: 'flex', gap: '20px' }}>
-            <a href="#" style={{ textDecoration: 'none', color: '#666', fontSize: '14px' }}>Trang chủ</a>
-            <a href="#" style={{ textDecoration: 'none', color: '#666', fontSize: '14px' }}>Dịch vụ</a>
-            <a href="#" style={{ textDecoration: 'none', color: '#666', fontSize: '14px' }}>Liên hệ</a>
+            <Link href="/" style={{ textDecoration: 'none', color: '#666', fontSize: '14px' }}>Trang chủ</Link>
+            <Link href="/about" style={{ textDecoration: 'none', color: '#666', fontSize: '14px' }}>About</Link>
+            <Link href="/detail" style={{ textDecoration: 'none', color: '#666', fontSize: '14px' }}>Detail</Link>
+            <Link href="/products" style={{ textDecoration: 'none', color: '#666', fontSize: '14px' }}>Product</Link>
           </nav>
         </header>
     )
